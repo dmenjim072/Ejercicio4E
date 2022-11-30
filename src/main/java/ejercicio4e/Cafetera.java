@@ -55,5 +55,9 @@ public class Cafetera {
     
     public void agregarCafe(double cantidadAgregar){
         this.cantidadActual = cantidadAgregar + cantidadActual;
+        
+        if(cantidadActual > capacidadMaxima){
+            
+        }
     }
 }
