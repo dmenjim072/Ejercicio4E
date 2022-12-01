@@ -48,16 +48,25 @@ public class Cafetera {
             cantidadAServir = cantidadActual;
         }
     }
+
+    @Override
+    public String toString() {
+        return "Cafetera{" + "capacidadMaxima=" + capacidadMaxima + ", cantidadActual=" + cantidadActual + '}';
+    }
     
+    
+    
+    //Metodo de la clase cafetera para vaciar la cafetera
     public void vaciarCafetera(){
         this.cantidadActual = 0;
     }
     
+    //Metodo de la clase cafetera para agregar cafe
     public void agregarCafe(double cantidadAgregar){
         this.cantidadActual = cantidadAgregar + cantidadActual;
         
         if(cantidadActual > capacidadMaxima){
-            
+            cantidadActual = capacidadMaxima;
         }
     }
 }

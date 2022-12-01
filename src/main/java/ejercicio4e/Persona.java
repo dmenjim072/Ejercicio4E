@@ -42,7 +42,11 @@ public class Persona {
         return "Persona{" + "edad=" + edad + ", nombre=" + nombre + '}';
     }
     
-    public void hacerCafe(Cafetera c){
-        
+    public void hacerCafe(Cafetera c){//Creamos 
+        c.llenarCafetera();    
+    }
+    
+    public void beberCafe(Cafetera c, int cantidad){
+         c.servirTaza(cantidad);
     }
 }
